@@ -49,4 +49,50 @@ public class Sprite {
         this.padding = 20;
     }
 
+    /*
+    // Метод для обновления внутреннего состояния справйта
+    public void update(int ms) {
+
+        timeForCurrentFrame += ms;// <=> timeForCurrentFrame = timeForCurrentFrame + ms;
+
+        if (timeForCurrentFrame >= frameTime) {
+            currentFrame = (currentFrame + 1) % frames.size();
+            timeForCurrentFrame = timeForCurrentFrame - frameTime;
+        }
+
+        //  В зависимости от времени и скорости по осям X и Y
+        // осуществляется изменение координат спрайта на экране.
+        x = x + velocityX * ms/1000.0;
+        y = y + velocityY * ms/1000.0;
+    }*/
+
+    /*
+    // Метод draw() рисует на переданном холсте текущий кадр frames.get(currentFrame)
+    // в области экрана, заданной в прямоугольнике destination
+    public void draw(Canvas canvas) {
+        Paint paint = new Paint();
+        Rect destination = new Rect( (int) x, (int) y, (int)(x + frameWidth), (int)(y + frameHeight));
+        canvas.drawBitmap(bitmap, frames.get(currentFrame), destination, paint);
+    }*/
+
+    //TODO ==== Добовить Getters и Setters ====
+
+
+    //TODO ====================================
+
+    /*
+    // Метод, возвращающий прямоугольную область,
+    // участвующую в определении столкновений
+    public Rect getBoundingBoxRect () {
+        return new Rect(
+                (int)x + padding,
+                (int)y + padding,
+                (int)(x + frameWidth - padding),
+                (int)(y + frameHeight - padding));
+    }*/
+
+    //TODO ==== Метод определения пересечения спрайтов ====
+
+
+    //TODO ================================================
 }
